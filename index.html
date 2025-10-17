@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sri Sai Astrologer</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+</head>
+<body>
+
+    <!-- Header -->
+    <header>
+        <div class="top-bar">
+            <span><i class="fas fa-phone-alt"></i> +91 9945065555</span>
+            <span><i class="fas fa-envelope"></i> shintow.bikal@gmail.com</span>
+            <div class="social-icons">
+                <a href="#"><i class="fab fa-facebook-f"></i></a>
+                <a href="#"><i class="fab fa-instagram"></i></a>
+                <a href="#"><i class="fab fa-youtube"></i></a>
+            </div>
+        </div>
+        <nav>
+            <div class="logo">
+                <img src="83f532e9-7307-4de5-9f2a-7d5798d96f21.png" alt="Sri Sai Astrologer">
+                <h1>SRI SAI ASTROLOGER</h1>
+            </div>
+            <div class="menu-toggle" id="mobile-menu">
+                <i class="fas fa-bars"></i>
+            </div>
+            <ul class="nav-links">
+                <li><a href="#">Home</a></li>
+                <li><a href="#">About Us</a></li>
+                <li><a href="#">Astrologer</a></li>
+                <li><a href="#">Get Blessed</a></li>
+                <li><a href="#">Remedial Solutions</a></li>
+                <li><a href="#">Gallery</a></li>
+                <li><a href="#">Contact Us</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- Banner -->
+    <section class="banner">
+        <div class="banner-content">
+            <h2 class="animate-text">Love Marriage Specialist</h2>
+            <p>May You Be Filled With Hope And Joy Every Day In Your Life</p>
+            <a href="#" class="btn">Get Complete Solution To Your All Problem!</a>
+            <h3>Call For Fast Solution</h3>
+            <div class="call">
+                <i class="fab fa-whatsapp"></i>
+                <span>+91 9945065555</span>
+            </div>
+        </div>
+        <div class="banner-img">
+            <img src="https://via.placeholder.com/400x400.png?text=Couple+Image" alt="Couple">
+        </div>
+    </section>
+
+    <!-- Floating Contact Buttons -->
+    <div class="contact-buttons">
+        <a href="#"><i class="fab fa-whatsapp"></i></a>
+        <a href="#"><i class="fas fa-phone-alt"></i></a>
+        <a href="#"><i class="fab fa-facebook-f"></i></a>
+        <a href="#"><i class="fab fa-instagram"></i></a>
+    </div>
+
+    <script>
+        const mobileMenu = document.getElementById('mobile-menu');
+        const navLinks = document.querySelector('.nav-links');
+
+        mobileMenu.addEventListener('click', () => {
+            navLinks.classList.toggle('active');
+            mobileMenu.querySelector('i').classList.toggle('fa-times');
+        });
+    </script>
+
+</body>
+</html>
