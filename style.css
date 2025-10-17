@@ -204,3 +204,41 @@ nav .nav-links li a:hover {
         gap: 5px;
     }
 }
+
+.three-images {
+    padding: 40px 20px;
+    background-color: #f5f5f5;
+}
+
+.image-container {
+    display: flex;
+    justify-content: center; /* center horizontally */
+    gap: 40px; /* equal space between images */
+    flex-wrap: wrap; /* allow wrapping on smaller screens */
+}
+
+.image-container img {
+    flex: 1 1 300px; /* grow/shrink, base 300px */
+    max-width: 300px; /* prevent image from being too large */
+    height: auto;
+    border-radius: 10px;
+    object-fit: cover;
+    transition: transform 0.3s;
+}
+
+.image-container img:hover {
+    transform: scale(1.05);
+}
+
+/* Mobile responsiveness */
+@media (max-width: 768px) {
+    .image-container {
+        flex-direction: column; /* stack images vertically */
+        align-items: center; /* center images */
+        gap: 20px; /* vertical spacing */
+    }
+
+    .image-container img {
+        max-width: 80%; /* responsive width for mobile */
+    }
+}
